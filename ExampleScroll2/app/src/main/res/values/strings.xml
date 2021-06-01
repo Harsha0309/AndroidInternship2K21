@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExampleScroll2</string>
+    <string name="head">Android</string>
+    <string name="shead">Introduction to Android</string>
+    <string name="thead">History of Android</string>
+    <string name="text">Android, operating system for cellular telephones and tablet computers. Android began in 2003 as a project of the American technology company Android Inc to develop an operating system for digital cameras. In 2004 the project changed to become an operating system for smartphones. Android Inc was bought by the American search engine company Google Inc in 2005. At Google, the Android team decided to base their project on Linux, an open source operating system for personal computers.
+    <br>Android, operating system for cellular telephones and tablet computers. Android began in 2003 as a project of the American technology company Android Inc to develop an operating system for digital cameras. In 2004 the project changed to become an operating system for smartphones. Android Inc was bought by the American search engine company Google Inc in 2005. At Google, the Android team decided to base their project on Linux, an open source operating system for personal computers.</br>
+    <br>This is the reference from https://developer.android.com/</br>
+    <br>My mail id is harshavardhanracharla@gmail.in</br>
+    <br>My mobile number is +917013149878</br>
+    </string>
+</resources>
