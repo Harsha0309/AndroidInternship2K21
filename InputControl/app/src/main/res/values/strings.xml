@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">InputControl</string>
+    <string name="heading">Registration Form</string>
+    <string name="dob">Click here to add DOB</string>
+    <string-array name="branch">
+        <item>- - - - Select your branch- - - -</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>CIVIL</item>
+        <item>IT</item>
+    </string-array>
+</resources>
