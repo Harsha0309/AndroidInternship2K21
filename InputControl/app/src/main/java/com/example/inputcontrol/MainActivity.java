@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Initialise all the views here
         name = findViewById(R.id.name);
-        mail=findViewById(R.id.email);
+        mail = findViewById(R.id.email);
         number = findViewById(R.id.number);
         branch = findViewById(R.id.sp);
         rg = findViewById(R.id.rg);
