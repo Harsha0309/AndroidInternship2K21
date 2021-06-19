@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements ItemAdapter.MyInterface {
     RecyclerView rv;
-    int totalAmount=0;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.MyInt
 
     @Override
     public void selectedItems(String itemName, String itemPrice, int position, int totalPrice) {
+        int totalAmount=0;
         Toast.makeText(this, ""+totalPrice,
                 Toast.LENGTH_SHORT).show();
         Log.i("Total",""+totalPrice);
