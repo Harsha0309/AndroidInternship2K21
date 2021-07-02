@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    //to create options menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //res >> to access into java file R.java  used
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.mymenu,menu);
         return super.onCreateOptionsMenu(menu);
     }
-
+    //displaying options menu and what they can do
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.contact:
                 Toast.makeText(this, "Contact", Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
                 break;

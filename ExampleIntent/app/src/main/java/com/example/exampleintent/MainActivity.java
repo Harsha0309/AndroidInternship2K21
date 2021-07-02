@@ -48,6 +48,5 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse("https://"+n);
         Intent i = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(i);
-
     }
 }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "825230092808",
+    "project_id": "phonesigninauth",
+    "storage_bucket": "phonesigninauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825230092808:android:b4320fb2a0afea66703fbd",
+        "android_client_info": {
+          "package_name": "com.example.phonesigninauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825230092808-tj1o89397cqad511c58kv2ib3a8b2b0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phonesigninauthentication",
+            "certificate_hash": "2773b177e4cec82549ab1ff6fe35c2dc278cea61"
+          }
+        },
+        {
+          "client_id": "825230092808-a0npirdtlddev8kl3e8vna84thjc52vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy_3W-3lWwAljVadV19ZDFihwnoBzcnoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825230092808-a0npirdtlddev8kl3e8vna84thjc52vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

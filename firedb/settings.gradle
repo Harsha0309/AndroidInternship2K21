@@ -1,0 +1,2 @@
+rootProject.name = "firedb"
+include ':app'
