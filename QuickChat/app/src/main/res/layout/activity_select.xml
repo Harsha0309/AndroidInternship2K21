@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/quickchat"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:id="@+id/mail"
+        android:textColor="@color/white"
+        android:text="Login With Mail"
+        android:onClick="Mail"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/mobile"
+        android:text="Login With Mobile"
+        android:onClick="Phone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textSize="20sp"
+        android:layout_marginTop="140dp"
+        android:textColor="#D80C51"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harsha Vardhan"
+        android:textSize="30sp"
+        android:textColor="#D80C51"
+        android:textStyle="italic|bold"
+        android:gravity="center"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

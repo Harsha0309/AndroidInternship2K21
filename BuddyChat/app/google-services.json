@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "868610521872",
+    "project_id": "buddy-chat-71e71",
+    "storage_bucket": "buddy-chat-71e71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868610521872:android:258cf961964c8168668395",
+        "android_client_info": {
+          "package_name": "com.example.buddychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868610521872-meobqse0fosqv4m44vomb7t0kt1c4qrl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.buddychat",
+            "certificate_hash": "2773b177e4cec82549ab1ff6fe35c2dc278cea61"
+          }
+        },
+        {
+          "client_id": "868610521872-j0vdui072q652hc7vs0skvkdu6papjtl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEwCo2NqHkB7przYW08K6BZrIegJpcBVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868610521872-j0vdui072q652hc7vs0skvkdu6papjtl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
