@@ -1,2 +1,5 @@
-package com.example.buddychat.Notifications;public class MyResponse {
+package com.example.buddychat.Notifications;
+
+public class MyResponse {
+    public int success;
 }

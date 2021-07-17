@@ -89,6 +89,20 @@ public class ChatActivity extends AppCompatActivity {
         DatabaseReference reference = database.getReference().child("user").child(firebaseAuth.getUid());
         DatabaseReference chatreference = database.getReference().child("chats").child(senderRoom).child("messages");
 
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull  DataSnapshot snapshot) {
+
+                sImage = snapshot.child("imageuri").getValue().toString();
+                rImage = ReceiverImage;
+            }
+
+            @Override
+            public void onCancelled(@NonNull  DatabaseError error) {
+
+            }
+        });
+
         chatreference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull  DataSnapshot snapshot) {
@@ -99,20 +113,6 @@ public class ChatActivity extends AppCompatActivity {
                     messagesArrayList.add(messages);
                 }
                 adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull  DatabaseError error) {
-
-            }
-        });
-
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull  DataSnapshot snapshot) {
-
-                sImage = snapshot.child("imageuri").getValue().toString();
-                rImage = ReceiverImage;
             }
 
             @Override

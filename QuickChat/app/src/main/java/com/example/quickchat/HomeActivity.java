@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -29,6 +30,8 @@ public class HomeActivity extends AppCompatActivity {
     FirebaseDatabase database;
     ArrayList<Users> usersArrayList;
     ImageView img_logout;
+    ImageView img_setting;
+    private boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +43,10 @@ public class HomeActivity extends AppCompatActivity {
         usersArrayList = new ArrayList<>();
 
         if (auth.getCurrentUser() == null) {
-            startActivity(new Intent(this, LoginActivity.class));
+            //1
+            startActivity(new Intent(this, RegistrationActivity.class));
         }
+        Toast.makeText(this, "Data is Fetching...", Toast.LENGTH_SHORT).show();
 
         DatabaseReference reference = database.getReference().child("user");
 
@@ -53,7 +58,6 @@ public class HomeActivity extends AppCompatActivity {
                     usersArrayList.add(users);
                 }
                 adapter.notifyDataSetChanged();
-
             }
 
             @Override
@@ -63,6 +67,8 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         img_logout = findViewById(R.id.img_logout);
+        img_setting = findViewById(R.id.img_setting);
+
         mainuserRecyclerview = findViewById(R.id.MainUserRecyclerView);
         mainuserRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(HomeActivity.this, usersArrayList);
@@ -73,7 +79,6 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Dialog dialog = new Dialog(HomeActivity.this);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
-
                 dialog.setContentView(R.layout.dialog_layout);
 
                 TextView yesbtn, nobtn;
@@ -85,7 +90,7 @@ public class HomeActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         FirebaseAuth.getInstance().signOut();
-                        startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                        startActivity(new Intent(HomeActivity.this,RegistrationActivity.class));
                     }
                 });
 
@@ -99,7 +104,23 @@ public class HomeActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+        img_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,SettingActivity.class));
+                finish();
+            }
+        });
+    }
 
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        doubleBackToExitPressedOnce = true;
 
     }
 }

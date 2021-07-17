@@ -22,7 +22,7 @@ import static com.example.quickchat.ChatActivity.sImage;
 public class MessageAdapter  extends RecyclerView.Adapter {
 
     Context context;
-    ArrayList<Messages>messagesArrayList;
+    ArrayList<Messages> messagesArrayList;
     int ITEM_SEND = 1;
     int ITEM_RECEIVE = 2;
 
@@ -41,7 +41,6 @@ public class MessageAdapter  extends RecyclerView.Adapter {
         }else {
             View view = LayoutInflater.from(context).inflate(R.layout.receiver_layout_item,parent,false);
             return  new ReceiverViewHolder(view);
-
         }
     }
 
@@ -52,7 +51,6 @@ public class MessageAdapter  extends RecyclerView.Adapter {
         if (holder.getClass()==SenderViewHolder.class){
             SenderViewHolder viewHolder = (SenderViewHolder) holder;
             viewHolder.txtmessage.setText(messages.getMessage());
-
             Picasso.get().load(sImage).into(viewHolder.circleImageView);
         }else {
             ReceiverViewHolder viewHolder = (ReceiverViewHolder) holder;
